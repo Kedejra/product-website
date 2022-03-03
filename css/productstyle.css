@@ -1,0 +1,79 @@
+ /*body {
+     background-color: #d9f5e2;
+ }*/
+
+ section {
+     padding: 60px 0;
+ }
+
+ #logo {
+     width: 100px;
+     height: 100px;
+
+ }
+
+ .bg-custom-green {
+     background-color: #d9f5e2;
+
+ }
+
+ .color-options {
+     display: grid;
+     grid-template-columns: repeat(5, 1fr);
+
+ }
+
+ .colors-black {
+     width: 15px;
+     height: 15px;
+     background-color: black;
+     border-radius: 50%;
+     border: 1px solid #ccc;
+ }
+
+ .colors-red {
+     width: 15px;
+     height: 15px;
+     background-color: rgb(228, 62, 62);
+     border-radius: 50%;
+     border: 1px solid #ccc;
+ }
+
+ .colors-green {
+     width: 15px;
+     height: 15px;
+     background-color: rgb(9, 129, 9);
+     border-radius: 50%;
+     border: 1px solid #ccc;
+ }
+
+ .colors-grey {
+     width: 15px;
+     height: 15px;
+     background-color: #444;
+     border-radius: 50%;
+     border: 1px solid #ccc;
+ }
+
+ .colors-blue {
+     width: 15px;
+     height: 15px;
+     background-color: rgb(91, 91, 233);
+     border-radius: 50%;
+     border: 1px solid #ccc;
+ }
+
+ .colors-red:hover,
+ .colors-black:hover,
+ .colors-blue:hover,
+ .colors-green:hover,
+ .colors-grey:hover {
+     transform: scale(1.5);
+     margin: 0.2rem;
+
+ }
+
+ #signup-img {
+     height: 92%;
+     width: 95%;
+ }

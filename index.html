@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
+    <!-- CSS File for additional styling -->
+      <link rel="stylesheet" href="../css/productstyle.css">
+    <link rel="stylesheet" href="../scss/main.css">
+    <title>Sneaks The Preview</title>
+</head>
+<body>
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-custom-green">
+        <div class="container-xxl">
+            <a href="#intro" class="navbar-brand">
+                <span>
+                    <img id="logo" src="../img/sneaker shop logo.png" alt="Sneaker Shop Logo">
+                </span>
+            </a>
+            <!-- Toggle button for mobile nav. The classes are bootstrap classes -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#details" class="nav-link">Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#reviews" class="nav-link">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a href="#order" class="nav-link">Order</a>
+                        </li>
+                        <li class="nav-item ms-2 d-none d-lg-inline text-white">
+                            <a href="#order" class="nav-link btn btn-success text-light">Order</a>
+                        </li>
+                    </ul>
+
+                </div>
+        </div>
+    </nav>
+
+    <!-- Main Page and intro text -->
+
+    <section id="intro" class="bg-custom-green">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-center text-md-start">
+                    <h1>
+                        <div class="display-1">The Sky Walk</div>
+                        <div class="display-6 text-muted">Where style and Comfort Meet</div>
+                    </h1>
+                    <p class="lead my-4 text-muted">You never have to sacrifice one for the other again!</p>
+                    <!-- <p class="text-muted fw-light ">I do not own this product or image. This is solely practice purposes</p> -->
+                    <a href="#order" class="btn btn-secondary btn-lg justify-self-center">Buy Now</a>
+                    <!-- Offcanvas : Side Bar -->
+                    <a href="#sidebar" class="d-block mt-3 text-secondary" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">Check out our other shoes</a>
+                </div>
+                <!-- The Image -->
+                <div class="col-md-7 text-center d-none d-md-block">
+                    <!-- img-fluid makes the pic adhere to container rules. so it adheres to the column rules -->
+                    <img id="display-img" class="img-fluid" src="../img/sneakers no background1.png" alt="sneakers">
+                </div>
+            </div>
+            <!-- transition to new section -->
+            <div class="d-flex justify-content-center">
+                <a href="#details"><i class="bi bi-arrow-down-circle" style="font-size: 2rem; color:#444;"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Details Section -->
+    <section id="details" class="bg-light">
+        <div class="container-md">
+            <!--  Section Header information -->
+            <div class="text-center">
+                <h2 class="display-3">Details</h2>
+                <p class="lead text-muted">About these kicks....</p>
+            </div>
+            <div class="row my-5 g-5 justify-content-around align-items-center">
+                <div class="col-6 col-lg-4">
+                    <!-- Implementation of tooltip -->
+                    <span class="ttip" data-bs-placement="bottom" title="New Sky Walk Sneakers">
+                  <img id="details-img" src="../img/sneakers2 no background.png" class="img-fluid"alt="Image of Sky Walk Sneakers"> 
+                </span> 
+                </div>
+                <div class="col-lg-6">
+                <!-- Accordion -->
+                <div class="accordion" id="dets">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-1">
+                        <button class="accordion-button bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#material" aria-expanded="true" aria-controls="material">Material</button>
+                        </h2>
+                        <div id="material" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#dets">
+                            <div class="accordion-body">
+                                <p>These badass sneakers are made with premium breathable and durable polyester</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 2 Features -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-2">
+                        <button class="accordion-button collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#features" aria-expanded="false" aria-controls="features">Features</button>
+                        </h2>
+                        <div id="features" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#dets">
+                            <div class="accordion-body">
+                                <p>This sneakers is breathable, durable and waterproof. Its also easy to clean</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-3">
+                        <button class="accordion-button collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#colors" aria-expanded="false" aria-controls="colors">Colors</button>
+                        </h2>
+                        <div id="colors" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#dets">
+                            <div class="accordion-body">
+                                <p>Color Options:</p>
+                                <!-- This is for the colours -->
+                                <div class="color-options">
+                                    <div> 
+                                        <div class="colors-black"></div>
+                                        <p>Black</p>
+                                    </div>
+                                    <div> 
+                                        <div class="colors-grey"></div>
+                                        <p>Grey</p>
+                                    </div>
+                                    <div> 
+                                        <div class="colors-green"></div>
+                                        <p>Green</p>
+                                    </div>
+                                        <div>
+                                        <div class="colors-blue"></div>
+                                        <p>Blue</p>
+                                    </div>
+                                        <div>
+                                        <div class="colors-red"></div>
+                                        <p>Red</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- transition to new section -->
+            <div class="d-flex justify-content-center mt-5">
+                <a href="#intro"><i class="bi bi-arrow-up-circle me-3" style="font-size: 2rem; color:#444;"></i></a>
+                <a href="#reviews"><i class="bi bi-arrow-down-circle" style="font-size: 2rem; color:#444;"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Reviews Section: Using Lists -->
+    <section id="reviews" class="bg-light">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2 class="display-3">Reviews</h2>
+                <p class="lead text-muted">Reviews from those who coped these new threads</p>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-8">
+                    <div class="list-group">
+                        <div class="list-group-item py-3 mb-2">
+                            <!-- Star ratings -->
+                            <div id="rating-stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h6 class="mb-1">These beats are made comfortable and shorties be looking</h6>
+                            <p class="mb-1">These sneakers were stylish and comfortable. No bunions. #SWAG</p>
+                            <small class="me-3">-Marcus</small>
+                            <i class="bi bi-hand-thumbs-up"></i>
+                            <i class="bi bi-hand-thumbs-down"></i>
+                        </div>
+                        <!-- List Item / Review 2  -->
+                        <div class="list-group-item py-3 mb-2">
+                            <div id="rating-stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <h6 class="mb-1">Great package deal</h6>
+                            <p class="mb-1">So I got the classic package all all sneakers are great quality. Fair pricing and I think these are gonna last a long time</p>
+                            <small class="me-3">-Ryan</small>
+                            <i class="bi bi-hand-thumbs-up"></i>
+                            <i class="bi bi-hand-thumbs-down"></i>
+                        </div>
+                        <div class="list-group-item py-3 mb-2">
+                            <div id="rating-stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <h6 class="mb-1">Great Quality</h6>
+                            <p class="mb-1">The quality on this is fire. I done ran in the rain and stepped in some puddles and my feet were DRY.Get you that Fresh to Death set up. Worth it</p>
+                            <small class="me-3">-Darius</small>
+                            <i class="bi bi-hand-thumbs-up"></i>
+                            <i class="bi bi-hand-thumbs-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- transition to new section -->
+            <div class="d-flex justify-content-center mt-5">
+                <a href="#details"><i class="bi bi-arrow-up-circle me-3" style="font-size: 2rem; color:#444;"></i></a>
+                <a href="#order"><i class="bi bi-arrow-down-circle" style="font-size: 2rem; color:#444;"></i></a>
+            </div>
+        </div>
+    </section>
+
+<!-- Order section; Uses cards -->
+    <section id="order" class="bg-light">
+        <div class="container-lg mt-5">
+            <div id="order-heading" class="text-center">
+                <h2 class="display-2">Your Order</h2>
+                <p class="lead text-muted">Choose the pricing plan that suits you</p>
+            </div>
+            <!-- Align Item is vertical alignment justify content is horizontal -->
+            <div class="row my-5 align-item-center justify-content-center g-2">
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-0">
+                        <div class="card-body py-4 text-center">
+                            <h4 class="card-title">Starter Kicks Edition</h4>
+                            <p class="card-subtitle">Get this pair along with our two most popular sneaker models of this year to kick start your collection</p>
+                            <p class="display-6 my-4 text-success fw-bold">$148.99</p>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">You are able to choose the colours of the next two styles from the categories of lifestyle and running.</p>
+                            <a href="" class="btn btn-outline-secondary  mt-3">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-9 col-lg-4">
+                    <div class="card border-2 border-success">
+                        <div class="card-header text-center text-success">Most Popular</div>
+                        <div class="card-body py-5 text-center">
+                            <h4 class="card-title">Fresh to Death Edition</h4>
+                            <p class="card-subtitle">Get this pair along with one other NEW RELEASE style</p>
+                            <p class="display-6 my-4 text-success fw-bold">$245.99</p>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">You are able to choose the colours of the next two styles from the categories of lifestyle and running.</p>
+                            <a href="" class="btn btn-outline-secondary  mt-3">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-0">
+                        <div class="card-body py-4 text-center">
+                            <h4 class="card-title">The Classics Edition</h4>
+                            <p class="card-subtitle">Get this pair along with our two most popular sneaker models of this year to kick start your collection</p>
+                            <p class="display-6 my-4 text-success fw-bold">$195.49</p>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">You are able to choose the colours of one additional sneakers. </p>
+                            <a href="" class="btn btn-outline-secondary  mt-3">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- transition to new section -->
+            <div class="d-flex justify-content-center mt-5">
+                <a href="#order"><i class="bi bi-arrow-up-circle me-3" style="font-size: 2rem; color:#444;"></i></a>
+                <a href="#contact"><i class="bi bi-arrow-down-circle" style="font-size: 2rem; color:#444;"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section using forms -->
+    <section id="contact" class="bg-dark text-white">
+        <div class="container-lg ">
+            <div class="text-center">
+                <h2 class="display-3">Get in Touch</h2>
+                <p class="lead text-muted">We'd love to hear from you</p>
+            </div>
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-6">
+                    <form >
+                        <!-- <label for="name" class="form-label">What's your name?</label> -->
+
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <!-- Tooltip 2 -->
+                                <span class="ttip" data-bs-placement="bottom" title="Enter your name">
+                                    <i class="bi bi-person"></i>
+                                </span>
+                                
+                            </span>
+                        <input type="text" name="name" placeholder="Enter your name" class="form-control">
+                      </div>
+                      
+                      <div class="mb-4 input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-inbox"></i>
+                        </span>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email">
+                      </div>
+                        
+                        <div class="mb-4 input-group">
+
+                            <span class="input-group-text">
+                                <i class="bi bi-telephone"></i>
+                            </span>
+                            <input type="tel" name="phone" placeholder="Enter your phone number" class="form-control">
+                        </div>
+                        
+
+                        <label for="subject" class="form-label">What do you want to talk about?</label>
+
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-quote"></i>
+                            </span>
+                            <select id="subject" class="form-select">
+                                <option value="Wholesale" selected>Wholesale Inquiry</option>
+    
+                                <option value="advertising">Advertising</option>
+    
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <textarea name="message" placeholder="Type your message..." class="form-control" style="height: 140px;"></textarea>
+
+                        <div class="mb-4 text-center">
+                        <button type="submit" class="btn btn-outline-light btn-lg my-4 ">Submit <i class="bi bi-send"></i></button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <!-- transition to new section -->
+            <div class="d-flex justify-content-center mt-5">
+                <a href="#order"><i class="bi bi-arrow-up-circle me-3" style="font-size: 2rem; color:#ccc;"></i></a>
+                <a href="#interaction"><i class="bi bi-arrow-down-circle" style="font-size: 2rem; color:#ccc;"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Future Interaction section. Allows the user to sign up for updates if they are interested. Like join a newsletter etc -->
+    <section id="interaction" class="bg-custom-green">
+        <div class="container">
+            <!-- Title section -->
+            <div class="text-center mb-5">
+                <h2 class="display-3">Stay Current</h2>
+                <p class="lead text-muted">Stay up to date with the hottest and latest in the sneaker game</p>
+            </div>
+            <!-- Body of section -->
+            <div class="row justify-content-around my-4">
+                <div class="col-md-7">
+                    <span class="ttip" data-bs-placement="bottom" title="Sign Up Today!">
+                    <img id="signup-img" src="img/signup.svg" alt="Sign Up">
+                </span>
+                </div>
+                <div class="col-md-5 text-center align-self-center fw-bold">
+                    <p class="lead">Our sneakers are the hottest on the market. Sign up to hear more about our special offers and get the drop on sales!</p>
+
+                    <button class="btn btn-outline-secondary my-3" data-bs-toggle="modal" data-bs-target="#sign-up-modal">
+                        Sign up for updates
+                    </button>
+                </div>
+            </div>
+            <!-- transition to new section -->
+            <div class="d-flex justify-content-center">
+                <a href="#intro"><i class="bi bi-arrow-up-circle" style="font-size: 2rem; color:#444;"></i></a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Modal Itself -->
+    <div class="modal fade" id="sign-up-modal" tabindex="-1" aria-labelledby="modal title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center display-6">Sign Up!</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <p class="text-center fw-bold">Get the Latest Today!</p>
+                    <label for="email" class="form-label">Enter your email</label>
+                    <input type="email" class="form-control" name="email" id="sign-up-email" placeholder="eg: nxtlevel@example.com">
+                </div>
+                <!-- Modal Footer, a seperate bottom section from the body with built in styling-->
+                <div class="modal-footer">
+                    <button class="btn btn-success text-white">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- Off Canvas -->
+        <div id="sidebar" class="offcanvas offcanvas-start bg-custom-green" tabindex="-1" aria-labelledby="sidebar">
+            <div class="offcanvas-header mt-4">
+                <h5 class="offcanvas-title display-6" id="sidebar-label"> Our Other Products</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+            </div>
+            <div id="o-canvas" class="offcanvas-body">
+                <p class="m-4">Over the last three years we have released distinct footwear lines for products. </p>
+                <ul>
+                    
+                </ul>
+
+                <!-- Dropdown -->
+                <div class="dropdown m-4">
+                    <button class="btn bg-dark text-light dropdown-toggle" type="button" id="prod-dropdown" data-bs-toggle="dropdown">Choose a collection</button>
+
+                    <ul class="dropdown-menu me-2 bg-light" aria-labelledby="prod-dropdown">
+                        <li><a class="dropdown-item mb-2" href="#">2021: J-walkers</a></li>
+                    <li><a class="dropdown-item mb-2" href="#">2020: Movement</a></li>
+                    <li><a class="dropdown-item mb-2" href="#">2019: The Magnet</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-light text-muted">
+        <p>Created by Kedejra. </p>
+        <p>Copyright &copy; 2022.</p>
+        <p>All images were obtained on Unsplash. These images do not belong to me. The sneakers are property of Nike. I do not claim ownership beyond development</p>
+    </footer>
+
+<!-- JScript: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- Tool Tip JScript trigger -->
+<script>
+const tooltips = document.querySelectorAll('.ttip')
+tooltips.forEach(tt => { new bootstrap.Tooltip(tt) })
+</script>
+</body>
+</html>
